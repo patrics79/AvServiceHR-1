@@ -25,7 +25,7 @@ namespace AvServiceHR.Services
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            var connectionString = configuration.GetConnectionString("AdventureWorksConnection");
+            connectionString = configuration.GetConnectionString("AdventureWorksConnection");
 
         }
 
@@ -49,9 +49,12 @@ namespace AvServiceHR.Services
 
 
         /// IMPLEMENTARE CON DAPPER
+        /// <summary>
+        /// Restituisce tutti i prodotti di quella locationId
         /// </summary>
+        /// 
         /// <returns></returns>
-        public async Task<List<ProductIdMiniInfo>> GetProductsQtyLocationId()
+        public async Task<List<ProductIdMiniInfo>> GetProductsQtyLocationId(int locationID)
         {
 
             var connection = new SqlConnection(connectionString);
@@ -63,6 +66,20 @@ namespace AvServiceHR.Services
             throw new NotImplementedException();
 
         }
+
+
+
+        /// IMPLEMENTARE CON EF
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<ProductIdMiniInfo>> SearchPerson(string firstName, string LastName)
+        {
+
+         
+            throw new NotImplementedException();
+
+        }
+
 
 
 
