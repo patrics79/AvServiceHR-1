@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProgettiVari\\AvServiceHR\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj": {}
+    "C:\\ProgettiAVS\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj": {}
   },
   "projects": {
-    "C:\\ProgettiVari\\AvServiceHR\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj": {
+    "C:\\ProgettiAVS\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProgettiVari\\AvServiceHR\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj",
+        "projectUniqueName": "C:\\ProgettiAVS\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj",
         "projectName": "AvServiceHR",
-        "projectPath": "C:\\ProgettiVari\\AvServiceHR\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj",
-        "packagesPath": "C:\\Users\\s.citi\\.nuget\\packages\\",
-        "outputPath": "C:\\ProgettiVari\\AvServiceHR\\AvServiceHR\\AvServiceHR\\obj\\",
+        "projectPath": "C:\\ProgettiAVS\\AvServiceHR\\AvServiceHR\\AvServiceHR.csproj",
+        "packagesPath": "C:\\Users\\a.butnaru\\.nuget\\packages\\",
+        "outputPath": "C:\\ProgettiAVS\\AvServiceHR\\AvServiceHR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -19,7 +19,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\s.citi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a.butnaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -29,7 +29,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
+          "http://api.nuget.org/v3/index.json": {},
           "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
