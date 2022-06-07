@@ -1,8 +1,33 @@
-﻿@{
+﻿@model IEnumerable<Person>
+
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">AV SERVICE HR</h1>   
+
+    <hr />
+    
 </div>
+
+<div>
+
+    @*Disegnare la Tabella dinamica in HTML  con i campi Title , firstname e lastname*@
+
+    @foreach (var item in Model)
+    {
+        <div>@item.FirstName</div>     
+        <br />
+    }
+
+
+
+
+
+</div>
+
+<script>
+    /*Implementare uno script javascript/jquery che converta in maiuscolo tutti i lastname che iniziano con la lettere A*/
+</script>

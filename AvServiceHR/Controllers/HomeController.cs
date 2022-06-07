@@ -1,5 +1,6 @@
 ﻿using AvServiceHR.Contexts;
 using AvServiceHR.Models;
+using AvServiceHR.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,25 +13,31 @@ namespace AvServiceHR.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        
 
 
-        private readonly AdventureWorks2017Context _advContext;
+        private readonly AdventureWorksServices _advServices;
 
-        public HomeController(ILogger<HomeController> logger, AdventureWorks2017Context context)
+
+        public HomeController( AdventureWorks2017Context context)
         {
-           
+            _advServices =  new AdventureWorksServices(context);
         }
 
-        public IActionResult Index()
+
+        public async Task<IActionResult> Index()
         {
-            return View();
+
+            var model = await _advServices.GetPersonTypeSc();
+            return View(model);
         }
+
 
         public IActionResult Privacy()
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -1,5 +1,7 @@
 ﻿using AvServiceHR.Contexts;
+using AvServiceHR.Models;
 using Dapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -32,6 +34,8 @@ namespace AvServiceHR.Services
 
         /// <summary>
         /// IMPLEMENTARE CON DAPPER
+        /// restituire tutti i prodotti con quantita' maggiori  100
+
         /// </summary>
         /// <returns></returns>
         public async Task<List<ProductIdMiniInfo>> GetProductsQtyMaggioreDi100(int locationId)
@@ -50,7 +54,7 @@ namespace AvServiceHR.Services
 
         /// IMPLEMENTARE CON DAPPER
         /// <summary>
-        /// Restituisce tutti i prodotti di quella locationId
+        /// Restituisce tutti i prodotti di quella  determinata locationId
         /// </summary>
         /// 
         /// <returns></returns>
@@ -72,13 +76,26 @@ namespace AvServiceHR.Services
         /// IMPLEMENTARE CON EF
         /// </summary>
         /// <returns></returns>
-        public async Task<List<ProductIdMiniInfo>> SearchPerson(string firstName, string LastName)
+        public async Task<List<Person>> SearchPerson(string firstName, string LastName)
         {
+            //_advContext db context
 
-         
             throw new NotImplementedException();
 
         }
+
+
+
+        /// IMPLEMENTARE CON EF
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<Person>> GetPersonTypeSc()
+        {
+            return await _advContext.Person.Where(w => w.PersonType == "SC").ToListAsync();        
+
+        }
+
+
 
 
 

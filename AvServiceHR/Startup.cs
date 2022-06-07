@@ -38,7 +38,7 @@ namespace AvServiceHR
             });
 
 
-            var connectionApiRoles = Configuration.GetConnectionString("KromedaConnection");
+            var connectionApiRoles = Configuration.GetConnectionString("AdventureWorksConnection");
             services.AddDbContext<AdventureWorks2017Context>(options => options.UseSqlServer(connectionApiRoles).UseLazyLoadingProxies());
 
         }
