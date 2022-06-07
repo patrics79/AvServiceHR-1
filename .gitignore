@@ -2,5 +2,5 @@
 # Il file gitignore è stato creato automaticamente da Microsoft(R) Visual Studio.
 ################################################################################
 
-/AvServiceHR/bin/Debug/netcoreapp3.1
-/.vs/AvServiceHR
+/AvServiceHR/bin
+/AvServiceHR/obj
