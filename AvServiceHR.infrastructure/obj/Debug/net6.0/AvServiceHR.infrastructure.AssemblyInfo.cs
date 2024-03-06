@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AvServiceHR.infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec92d3c56ca4e6aef430557448b13ab782353bbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e49d49aaf2c2242bf2eb7e23b7bd3a39672176a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AvServiceHR.infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AvServiceHR.infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
