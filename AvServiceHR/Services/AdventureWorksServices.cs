@@ -1,5 +1,5 @@
-﻿using AvServiceHR.Contexts;
-using AvServiceHR.Models;
+﻿using AvServiceHR.infrastructure.Models;
+
 using Dapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -92,6 +92,16 @@ namespace AvServiceHR.Services
         public async Task<List<Person>> GetPersonTypeSc()
         {
             return await _advContext.Person.Where(w => w.PersonType == "SC").ToListAsync();        
+
+        }
+
+
+        /// IMPLEMENTARE CON EF
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<Person>> GetPersonFilter(string nome, string cognome)
+        {
+            throw new NotImplementedException();
 
         }
 

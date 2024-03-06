@@ -1,0 +1,15 @@
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\bin\Debug\net6.0\AvServiceHR.infrastructure.deps.json
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\bin\Debug\net6.0\AvServiceHR.infrastructure.runtimeconfig.json
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\bin\Debug\net6.0\AvServiceHR.infrastructure.dll
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\bin\Debug\net6.0\AvServiceHR.infrastructure.pdb
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.csproj.AssemblyReference.cache
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.AssemblyInfoInputs.cache
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.AssemblyInfo.cs
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.csproj.CoreCompileInputs.cache
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.sourcelink.json
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.dll
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\refint\AvServiceHR.infrastructure.dll
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.pdb
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\AvServiceHR.infrastructure.genruntimeconfig.cache
+C:\ProgettiVari\AvServiceHR\AvServiceHR\AvServiceHR.infrastructure\obj\Debug\net6.0\ref\AvServiceHR.infrastructure.dll
