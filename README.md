@@ -50,3 +50,7 @@ Progetto di unit Test
 
 (NICE TO HAVE)
 - Creare un file dockercompose per la compilazione e esecuzione dei progetti Rest API e MVC in Containers
+
+Per la consegna eseguire un Pull Request
+
+Per qualsiasi informazione contattere it@avservice.it oppure simone.citi@avservice.it
