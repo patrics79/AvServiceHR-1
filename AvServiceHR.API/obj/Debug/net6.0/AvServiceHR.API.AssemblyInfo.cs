@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AvServiceHR.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec92d3c56ca4e6aef430557448b13ab782353bbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fdfd5828625f536b766715c93f2f11d8b36369d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AvServiceHR.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AvServiceHR.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
