@@ -23,8 +23,8 @@ Web Application (MVC):
 - nel file index.cshtml
 
 
-	<div>
-	@* TODO *@
+		<div>
+		@* TODO *@
 		@*Disegnare la Tabella dinamica in HTML  con i campi Title , firstname lastname*@
 		@* Colorare header tabella di rosso *@
     
@@ -33,11 +33,11 @@ Web Application (MVC):
 			<div>@item.FirstName</div>     
 			<br />
 		}                     
-	</div>    
-	<script>
+		</div>    
+		<script>
 		// TODO
 		/*Implementare uno script javascript/jquery che converta in maiuscolo tutti i lastname che iniziano con la lettere A*/
-	</script>
+		</script>
 
 Rest API
 - Implementare il controller con le 4 operazioni CRUD per la classe PERSON
