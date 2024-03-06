@@ -1,4 +1,4 @@
-﻿### AV SERVICE JOB INTERVIEW SKILL TEST
+### AV SERVICE JOB INTERVIEW SKILL TEST
 
 ![](https://images-ext-2.discordapp.net/external/RkdbwXvD0DjitXt0SqjfOA11D9FKMCVjg2jCAlVkNC0/https/www.avservice.it/wp-content/uploads/2020/12/avservice-logo.png?format=webp&quality=lossless)
 
@@ -25,21 +25,19 @@ Web Application (MVC):
 
 	<div>
 	@* TODO *@
-        @*Disegnare la Tabella dinamica in HTML  con i campi Title , firstname lastname*@
-        @* Colorare header tabella di rosso *@
+		@*Disegnare la Tabella dinamica in HTML  con i campi Title , firstname lastname*@
+		@* Colorare header tabella di rosso *@
     
-        @foreach (var item in Model)
-        {
-            <div>@item.FirstName</div>     
-            <br />
-        }                     
-    </div>
-    
-    <script>
-        // TODO
-        /*Implementare uno script javascript/jquery che converta in maiuscolo tutti i lastname che iniziano con la lettere A*/
-    </script>
-
+		@foreach (var item in Model)
+		{
+			<div>@item.FirstName</div>     
+			<br />
+		}                     
+	</div>    
+	<script>
+		// TODO
+		/*Implementare uno script javascript/jquery che converta in maiuscolo tutti i lastname che iniziano con la lettere A*/
+	</script>
 
 Rest API
 - Implementare il controller con le 4 operazioni CRUD per la classe PERSON
