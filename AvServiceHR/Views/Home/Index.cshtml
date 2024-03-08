@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Person>
+@model IEnumerable<Person>
 
 
 @{
@@ -17,9 +17,21 @@
     @*Disegnare la Tabella dinamica in HTML  con i campi Title , firstname e lastname*@
     @* Colorare header tabella di rosso *@
 
+    <header style="color: red">
+        <div>
+            <p id="title">TITLE</p>  
+            <p id="firstName">FIRST NAME</p>  
+            <p id="lastName"LAST NAME</p>  
+        </div>     
+    </header>
+
     @foreach (var item in Model)
     {
-        <div>@item.FirstName</div>     
+        <div>
+            <p id="title">@item.Title</p>  
+            <p id="firstName">@item.FirstName</p>  
+            <p id="lastName">@item.LastName</p>  
+        </div>     
         <br />
     }
 
@@ -33,4 +45,8 @@
 <script>
     // TODO
     /*Implementare uno script javascript/jquery che converta in maiuscolo tutti i lastname che iniziano con la lettere A*/
+    @foreach (var item in Model)
+    {
+        if (@item.LastName.Substring(1,1).ToUpper().Equals("A"))  @item.LastName = @item.LastName.ToUpper();
+    }
 </script>
