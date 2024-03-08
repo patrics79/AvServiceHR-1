@@ -1,4 +1,4 @@
-﻿using AvServiceHR.infrastructure.Models;
+using AvServiceHR.infrastructure.Models;
 
 using Dapper;
 using Microsoft.EntityFrameworkCore;
@@ -35,7 +35,6 @@ namespace AvServiceHR.Services
         /// <summary>
         /// IMPLEMENTARE CON DAPPER
         /// restituire tutti i prodotti con quantita' maggiori  100
-
         /// </summary>
         /// <returns></returns>
         public async Task<List<ProductIdMiniInfo>> GetProductsQtyMaggioreDi100(int locationId)
@@ -44,7 +43,11 @@ namespace AvServiceHR.Services
             var connection = new SqlConnection(connectionString);
 
             string sqlSelect = $@"  
-                             --- paste query here ----
+                             select p.Name, sum(pi.Quantity)
+                               from Production.Product p
+                               join Production.ProductInventory pi on p.ProductID = pi.ProductID
+                           group by p.Name
+                          having sum(pi.Quantity) > 100
                            ";
             var preGiorn = (await connection.QueryAsync<ProductIdMiniInfo>(sqlSelect, commandTimeout: 500)).ToList();
             throw new NotImplementedException();
@@ -64,7 +67,11 @@ namespace AvServiceHR.Services
             var connection = new SqlConnection(connectionString);
 
             string sqlSelect = $@"  
-                           --- paste query here ----
+                           select p.*
+                             from Production.Product p
+                             join Production.ProductInventory pi on p.ProductID = pi.ProductID
+                            where pi.LocationID = @locationID
+                            order by p.Name
                            ";
             var preGiorn = (await connection.QueryAsync<ProductIdMiniInfo>(sqlSelect, commandTimeout: 500)).ToList();
             throw new NotImplementedException();
@@ -79,6 +86,7 @@ namespace AvServiceHR.Services
         public async Task<List<Person>> SearchPerson(string firstName, string LastName)
         {
             //_advContext db context
+            return await _advContext.Person.Where(x => x.FirstName == firstName && x.LastName == LastName).ToListAsync();
 
             throw new NotImplementedException();
 
@@ -91,8 +99,9 @@ namespace AvServiceHR.Services
         /// <returns></returns>
         public async Task<List<Person>> GetPersonTypeSc()
         {
-            return await _advContext.Person.Where(w => w.PersonType == "SC").ToListAsync();        
+            return await _advContext.Person.Where(w => w.PersonType == "SC").ToListAsync();
 
+            throw new NotImplementedException();
         }
 
 
@@ -101,6 +110,9 @@ namespace AvServiceHR.Services
         /// <returns></returns>
         public async Task<List<Person>> GetPersonFilter(string nome, string cognome)
         {
+            return await _advContext.Person.Where(x => x.FirstName == nome && x.LastName == cognome).ToListAsync();
+
+
             throw new NotImplementedException();
 
         }
